@@ -32,10 +32,11 @@ This repository provides bash scripts to easily administrate a JupyterHub server
 ./delete-user-from-system.sh <HOST> <JUPYTERHUB_TOKEN> <PATTERN>
 ```
 * Meaning of each argument:
-    * <HOST> is the JupyterHub URL.
-    * <PATTERN> indicates which users have to be deleted.
-    * <TOKEN> is a token generated on JupyterHub to interact with the API.
+    * `<HOST>` is the JupyterHub URL.
+    * `<PATTERN>` indicates which users have to be deleted.
+    * `<TOKEN>` is a token generated on JupyterHub to interact with the API.
 * Example: `./delete-user-from-system.sh 127.0.0.1 16eae6dda3a44245b4e30e97b789fcu5 test` will completely delete from the system all users whose name contain the word `test`.
 
+* Note that you have to run the script from the `/home` directory in order to delete the specified users.
 
   
